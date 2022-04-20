@@ -1,18 +1,7 @@
-Will run the container app on http://localhost:3000
+These commands will run the container app on http://localhost:3000
 
-```
-cd container
-npm install
-npm run dev
-```
+cd into each directory and run `npm run watch`.
 
-Will build the header, and serve as static asset on http://localhost:3001/assets
+The container will start as a site in dev mode.
 
-```
-cd header
-npm install
-npm run build
-npm run preview
-```
-
-Go to http://localhost:3000
+The others will be production built and hosted as static assets
