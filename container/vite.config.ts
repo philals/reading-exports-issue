@@ -14,6 +14,7 @@ export default defineConfig({
       filename: "remoteEntry.js",
       remotes: {
         "@mpui": "http://localhost:3001/assets/remoteEntry.js",
+        "@squad": "http://localhost:3002/assets/remoteEntry.js",
       },
       shared: { react: { singleton: true }, "react-dom": { singleton: true } },
     }),

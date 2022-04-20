@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import React from "react";
 const Button = React.lazy(() => import("@mpui/Button"));
+const SquadApp = React.lazy(() => import("@squad/App"));
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,6 +13,9 @@ function App() {
       <header className="App-header">
         <Suspense fallback={"loading..."}>
           <Button />
+        </Suspense>
+        <Suspense fallback={"loading..."}>
+          <SquadApp />
         </Suspense>
         <img src={logo} className="App-logo" alt="logo" />
         <p>Hello Vite + React!</p>
