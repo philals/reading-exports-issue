@@ -1,5 +1,4 @@
 import React from "react";
+import Header from "./Header";
 
-export default ({ caption = "Home Button" }) => (
-  <button className="remote-btn">{caption}</button>
-);
+export default () => <Header />;

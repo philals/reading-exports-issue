@@ -12,8 +12,9 @@ export default defineConfig({
       name: "@mpui",
       filename: "remoteEntry.js",
       exposes: {
-        "./Button": "./src/Button.jsx",
+        "./Header": "./src/Header.tsx",
       },
+      shared: { react: { singleton: true }, "react-dom": { singleton: true } },
     }),
   ],
   build: {

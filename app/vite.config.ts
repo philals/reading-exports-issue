@@ -12,8 +12,9 @@ export default defineConfig({
       name: "@squad",
       filename: "remoteEntry.js",
       exposes: {
-        "./App": "./src/App.jsx",
+        "./App": "./src/App.tsx",
       },
+      shared: { react: { singleton: true }, "react-dom": { singleton: true } },
     }),
   ],
   build: {
