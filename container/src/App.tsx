@@ -2,7 +2,7 @@ import { Suspense, useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import React from "react";
-const RemoteApp = React.lazy(() => import("home/Button"));
+const Button = React.lazy(() => import("@mpui/Button"));
 
 function App() {
   const [count, setCount] = useState(0);
@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Suspense fallback={"loading..."}>
-          <RemoteApp />
+          <Button />
         </Suspense>
         <img src={logo} className="App-logo" alt="logo" />
         <p>Hello Vite + React!</p>

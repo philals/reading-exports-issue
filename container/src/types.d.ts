@@ -1,1 +1,1 @@
-declare module "router-remote/*";
+declare module "@mpui/Button";

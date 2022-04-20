@@ -13,7 +13,7 @@ export default defineConfig({
       name: "container",
       filename: "remoteEntry.js",
       remotes: {
-        home: "http://localhost:3001/assets/remoteEntry.js",
+        "@mpui": "http://localhost:3001/assets/remoteEntry.js",
       },
       shared: { react: { singleton: true }, "react-dom": { singleton: true } },
     }),
