@@ -1,16 +1,12 @@
-import React from "react";
-import logo from "./logo.svg";
+import React, { useState } from "react";
 import "./App.css";
 
 export default function (): JSX.Element {
-  // Major issue: https://github.com/originjs/vite-plugin-federation/issues/122
-  // https://github.com/originjs/vite-plugin-federation/issues/161
   const [count, setCount] = React.useState(0);
-  console.log("🚀 ~ file: App.tsx ~ line 3 ~ logo", logo);
+  // const [count1, setCount1] = useState(0);
 
   return (
     <div className="App">
-      <img src={logo} className="App-logo" alt="logo" />
       <p>Hello Vite + React</p>
       <p>
         <button type="button" onClick={() => setCount((count) => count + 1)}>

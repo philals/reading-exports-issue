@@ -13,7 +13,6 @@ export default defineConfig({
       name: "container",
       filename: "remoteEntry.js",
       remotes: {
-        "@mpui": "http://localhost:3001/assets/remoteEntry.js",
         "@squad": {
           external: "http://localhost:3002/assets/remoteEntry.js",
           from: "vite",
