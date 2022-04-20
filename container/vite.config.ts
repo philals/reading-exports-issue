@@ -10,6 +10,8 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
+      name: "container",
+      filename: "remoteEntry.js",
       remotes: {
         home: "http://localhost:3001/assets/remoteEntry.js",
       },
