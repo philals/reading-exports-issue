@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 
 export default function (): JSX.Element {
-  const [count, setCount] = React.useState(0);
-  // const [count1, setCount1] = useState(0);
+  const [count, setCount] = useState(0);
 
   return (
     <div className="App">
