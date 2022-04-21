@@ -7,3 +7,5 @@ cd into each directory and run
 The container will start as a site in dev mode.
 
 The others will be production built and hosted as static assets
+
+Repo to demo https://github.com/originjs/vite-plugin-federation/issues/173
