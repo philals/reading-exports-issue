@@ -2,7 +2,7 @@ These commands will run the container app on http://localhost:3000
 
 cd into each directory and run
 
-```npm install && npm run watch`.
+```npm install && npm run watch```.
 
 The container will start as a site in dev mode.
 
